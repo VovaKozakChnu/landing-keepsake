@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keepsake — Digital &amp; Branding Agency</title>
+
+  <!-- Google Fonts: Oswald, Open Sans, Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== FIXED HEADER ==================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Keepsake Homepage">
+        <span class="logo-mark">K</span>
+        <span class="logo-text">Keepsake</span>
+      </a>
+
+      <!-- CSS-only Burger Toggle (No JS) -->
+      <input type="checkbox" id="burger-toggle" class="burger-checkbox" aria-label="Toggle navigation">
+      <label for="burger-toggle" class="burger-btn" aria-label="Open navigation menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </label>
+
+      <nav class="nav-menu" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#works" class="nav-link">Our Works</a></li>
+          <li class="nav-item"><a href="#journal" class="nav-link">Journal</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary btn-contact-nav">Contact us</a>
+          <button type="button" class="btn-fav" aria-label="Favourites">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu-footer">
+          <p class="say-hello">Say hello</p>
+          <a href="mailto:hello@keepsake.studio" class="contact-mail">hello@keepsake.studio</a>
+          <p class="contact-phone">+44 20 7946 0000</p>
+          <div class="social-circles">
+            <a href="#" class="social-dot" aria-label="RSS">rss</a>
+            <a href="#" class="social-dot" aria-label="Facebook">f</a>
+            <a href="#" class="social-dot" aria-label="Twitter">tw</a>
+            <a href="#" class="social-dot" aria-label="Dribbble">dr</a>
+            <a href="#" class="social-dot" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="about">
+      <div class="container hero-container">
+        <h1 class="hero-title">WE’RE KEEPSAKE, A DIGITAL &amp; BRANDING AGENCY</h1>
+        <p class="hero-subtitle">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+        <div class="hero-actions">
+          <a href="#works" class="btn btn-primary">See our works</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OUR AWESOME WORKS ==================== -->
+    <section class="section section-works" id="works">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Our awesome works</h2>
+        </header>
+
+        <!-- Hidden Radio Inputs for Pure CSS Filter (:checked ~) -->
+        <input type="radio" name="p-filter" id="filter-all" class="filter-radio" checked>
+        <input type="radio" name="p-filter" id="filter-branding" class="filter-radio">
+        <input type="radio" name="p-filter" id="filter-identity" class="filter-radio">
+        <input type="radio" name="p-filter" id="filter-print" class="filter-radio">
+        <input type="radio" name="p-filter" id="filter-web" class="filter-radio">
+        <input type="radio" name="p-filter" id="filter-motion" class="filter-radio">
+
+        <div class="chips-wrapper">
+          <div class="chips-container" role="tablist">
+            <label for="filter-all" class="chip chip-all">All</label>
+            <label for="filter-branding" class="chip chip-branding">Branding</label>
+            <label for="filter-identity" class="chip chip-identity">Identity</label>
+            <label for="filter-print" class="chip chip-print">Print</label>
+            <label for="filter-web" class="chip chip-web">Web</label>
+            <label for="filter-motion" class="chip chip-motion">Motion</label>
+          </div>
+        </div>
+
+        <div class="works-grid">
+          <!-- Card 1 -->
+          <article class="work-card" data-category="branding" tabindex="0">
+            <div class="work-thumb bg-mockup">
+              <span class="card-tag">Mock-up Tag</span>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">Mock-up Tag</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Branding</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="work-card" data-category="branding" tabindex="0">
+            <div class="work-thumb bg-piecepaper">
+              <span class="card-tag-paper">PIECE<strong>PAPER</strong></span>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">Piece Paper</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Branding</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="work-card" data-category="identity" tabindex="0">
+            <div class="work-thumb bg-vinyl">
+              <div class="vinyl-mock"></div>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">Vinyl Record</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Identity</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="work-card" data-category="print" tabindex="0">
+            <div class="work-thumb bg-vol16">
+              <span class="vol-tag">VOL. 16</span>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">Vol. 16 Book</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Print</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 (Hovered state in design) -->
+          <article class="work-card" data-category="web" tabindex="0">
+            <div class="work-thumb bg-dark">
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">PROFILE UI</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Web</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="work-card" data-category="print" tabindex="0">
+            <div class="work-thumb bg-brochure">
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">Minimal Brochure</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Print</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="work-card" data-category="identity" tabindex="0">
+            <div class="work-thumb bg-wallst">
+              <span class="wallst-title">WallSt.</span>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">WallSt Identity</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Identity</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="work-card" data-category="branding" tabindex="0">
+            <div class="work-thumb bg-johndoe">
+              <span class="johndoe-tag">JOHN DOE<small>DESIGN STUDIO</small></span>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">John Doe Cards</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Branding</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="work-card" data-category="motion" tabindex="0">
+            <div class="work-thumb bg-sealfabric">
+              <span class="seal-badge">SEAL FABRIC</span>
+              <div class="work-overlay">
+                <span class="overlay-icon">+</span>
+                <h3 class="overlay-title">Seal Fabric</h3>
+                <span class="overlay-line"></span>
+                <p class="overlay-cat">Motion</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="works-actions">
+          <button type="button" class="btn btn-secondary btn-load-more">Load more works</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="section section-cta">
+      <div class="container cta-container">
+        <h2 class="cta-title">Would you love to work with us?</h2>
+        <a href="#contact" class="btn btn-primary btn-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          Contact us
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== WHAT WE DO (SERVICES) ==================== -->
+    <section class="section section-services" id="services">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">What do we do</h2>
+          <p class="section-subtext">We are a small team of designers and makers who help brands look their best online and offline.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-item">
+            <div class="service-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/></svg>
+            </div>
+            <h3 class="service-name">Web design</h3>
+            <p class="service-desc">Responsive sites and product interfaces that look sharp on every screen.</p>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+            </div>
+            <h3 class="service-name">Motion video</h3>
+            <p class="service-desc">Explainers, logo animations and social clips that bring brands to life.</p>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+            </div>
+            <h3 class="service-name">Print design</h3>
+            <p class="service-desc">Posters, packaging and stationery prepared to be printed right.</p>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3 class="service-name">Illustration</h3>
+            <p class="service-desc">Custom illustrations and icon sets in a style that is yours alone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+    <section class="section section-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">PROJECTS DONE</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">8</span>
+            <span class="stat-label">YEARS IN CRAFT</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">64</span>
+            <span class="stat-label">HAPPY CLIENTS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">15</span>
+            <span class="stat-label">DESIGN AWARDS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CLIENTS & KIND WORDS ==================== -->
+    <section class="section section-clients" id="clients">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Clients &amp; kind words</h2>
+          <p class="section-subtext">Some of the teams that trusted us with their brands.</p>
+        </header>
+
+        <div class="clients-logos">
+          <span class="client-logo">NORDLY</span>
+          <span class="client-logo">Halcyon</span>
+          <span class="client-logo">ARCO</span>
+          <span class="client-logo">pinewood</span>
+          <span class="client-logo">VELA</span>
+          <span class="client-logo">ostra</span>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="quote-mark">“</span>
+          <blockquote class="quote-text">
+            Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.
+          </blockquote>
+          <div class="quote-author">
+            <div class="author-avatar">OM</div>
+            <div class="author-meta">
+              <cite class="author-name">OLENA MARCHENKO</cite>
+              <span class="author-role">Marketing Lead, Nordly</span>
+            </div>
+          </div>
+          <div class="slider-dots" aria-hidden="true">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FROM THE JOURNAL ==================== -->
+    <section class="section section-journal" id="journal">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">From the journal</h2>
+          <p class="section-subtext">Notes on process, case studies and things that inspire us.</p>
+        </header>
+
+        <div class="journal-grid">
+          <!-- Article 1 -->
+          <article class="journal-card">
+            <div class="journal-thumb j-img-1"></div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <time datetime="2026-10-13">OCT 13, 2026</time>
+                <span class="meta-separator">/</span>
+                <span class="meta-cat">IDENTITY</span>
+              </div>
+              <h3 class="journal-title">SOLLICITUDIN TORTOR INCEPTOS</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="read-more">READ MORE &gt;</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="journal-card">
+            <div class="journal-thumb j-img-2"></div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <time datetime="2026-10-23">OCT 23, 2026</time>
+                <span class="meta-separator">/</span>
+                <span class="meta-cat">BRANDING</span>
+              </div>
+              <h3 class="journal-title">AMET INCEPTOS FRINGILLA FUSCE</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="read-more">READ MORE &gt;</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card">
+            <div class="journal-thumb j-img-3"></div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <time datetime="2026-09-15">SEP 15, 2026</time>
+                <span class="meta-separator">/</span>
+                <span class="meta-cat">IDENTITY</span>
+              </div>
+              <h3 class="journal-title">CURSUS MALESUADA JUSTO</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="read-more">READ MORE &gt;</a>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="journal-card">
+            <div class="journal-thumb j-img-4"></div>
+            <div class="journal-body">
+              <div class="journal-meta">
+                <time datetime="2026-09-21">SEP 21, 2026</time>
+                <span class="meta-separator">/</span>
+                <span class="meta-cat">BRANDING</span>
+              </div>
+              <h3 class="journal-title">ORNARE CURSUS BIBENDUM PURUS</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="read-more">READ MORE &gt;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Studio</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Agency</a></li>
+              <li><a href="#works">Our Works</a></li>
+              <li><a href="#journal">Journal</a></li>
+              <li><a href="#clients">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Web design</a></li>
+              <li><a href="#services">Motion video</a></li>
+              <li><a href="#services">Print design</a></li>
+              <li><a href="#services">Illustration</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-subscribe">
+          <h4 class="footer-col-title">Newsletter</h4>
+          <p class="footer-sub-text">Fresh case studies and design notes, once a month.</p>
+          <form class="subscribe-form" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="sub-email" class="visually-hidden">Email address</label>
+              <input type="email" id="sub-email" class="form-input" placeholder="Your email address" required aria-describedby="email-error">
+              <button type="submit" class="btn btn-primary btn-submit">Subscribe</button>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox" required>
+              <span>I agree to the privacy policy</span>
+            </label>
+            <span id="email-error" class="form-error-msg" aria-live="polite">Please enter a valid email address.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Keepsake. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="RSS">rss</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Twitter">tw</a>
+          <a href="#" class="social-link" aria-label="Dribbble">dr</a>
+          <a href="#" class="social-link" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <a href="#" class="btn-scroll-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
